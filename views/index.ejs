@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NODEJS + EXPRESS + EJS TEMPLATE</title>
+</head>
+<body>
+    <H1>EJS TEMPLETE</H1>
+<!--
+aca va ir los datos que ejemplos de una consulta en base de datos la cual esta en route al renderizar la vista y para poder verlo 
+hacemos esto
+-->
+
+<ul>
+<% people.forEach(function (person){ %>
+    <li><%= person.name %></li>
+<% }) %>
+</ul>
+</body>
+</html>
